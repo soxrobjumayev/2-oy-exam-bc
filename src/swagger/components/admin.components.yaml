@@ -1,0 +1,19 @@
+
+components:
+  schemas:
+    admin:
+      type: object
+      properties:
+        username:
+          type: string 
+        password:
+          type: string
+    adminResponse:
+      type: object
+      properties:
+        starus:
+          type: integer 
+        message:
+          type: string
+        token:
+         type: string

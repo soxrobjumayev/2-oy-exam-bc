@@ -1,0 +1,19 @@
+
+/admin:
+  post:
+    tags:
+      - admins
+    requestBody:
+      description: login
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/admin'
+    required: true
+    responses:
+      '200':
+        description: admin login
+        content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/adminResponse'

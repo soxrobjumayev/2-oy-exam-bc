@@ -1,0 +1,83 @@
+/elonla:
+  get:
+    tags:
+      - elonla
+    responses:
+      '200':
+        description: elonla
+        content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/elonResponse'
+  post:
+    tags:
+      - elonla
+    requestBody:
+      description: elonla post
+      content:
+        multipart/from-data:
+          schema:
+            $ref: '#/components/schemas/Postelonla'
+        required: true
+    responses:
+      '200':
+        description: elonla
+        content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/elonResponse'
+
+
+/elonla?ism:
+  get:
+    tags:
+      - elonla
+    parameters:
+      - name: ism
+        in: query
+        description: elon filter ism
+        required: false
+    responses:
+      '200':
+        description: elonla
+        content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/elonResponse'
+
+/elonla?profissiya:
+  get:
+    tags:
+      - elonla
+    parameters:
+      - name: profissiya
+        in: query
+        description: elon filter profissiya
+        required: false
+    responses:
+      '200':
+        description: elonla
+        content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/elonResponse'
+
+/elonla?tadbir_turi:
+  get:
+    tags:
+      - elonla
+    parameters:
+      - name: tadbir_turi
+        in: query
+        description: elon filter tadbir_turi
+        required: false
+    responses:
+      '200':
+        description: elonla
+        content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/elonResponse'
+    security:
+        -Bearer:
+           type: oauth2

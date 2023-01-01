@@ -1,0 +1,60 @@
+components:
+  schemas:
+    elonResponse:
+      type: object
+      properties:
+        elonId:
+          type: integer 
+        tadbir_turi:
+          type: string
+        sanasi:
+          type: string
+        vaqti:
+          type: string
+        profissiya:
+          type: string
+        telefon_raqami:
+          type: string
+        Description:
+          type: string
+        Mavzu_matni:
+          type: string
+        ism:
+          type: string
+        tasdiqlash:
+          type: string
+        created_at:
+          type: string
+        img:
+          type: string
+    Postelonla:
+      type: object
+      properties:
+        tadbir_turi:
+          type: string
+        sanasi:
+          type: string
+        vaqti:
+          type: string
+        profissiya:
+          type: string
+        telefon_raqami:
+          type: string
+        Description:
+          type: string
+        Mavzu_matni:
+          type: string
+        ism:
+          type: string
+        size:
+          type: string
+        tasdiqlash:
+          type: string
+        created_at:
+          type: string
+        img:
+          type: string
+          format: binary
+  
+            
+          
